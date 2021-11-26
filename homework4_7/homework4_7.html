@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <style>
+        @font-face {
+            font-family: "mumblers_demoregular";
+            src: url(./mumblers_demo-webfont.woff2);
+        }
+        
+        * {
+            margin: 0;
+            font-family: "mumblers_demoregular";
+        }
+        
+        body {
+            background-color: rgb(255, 165, 0);
+        }
+        
+        .container {
+            text-align: center;
+            background-color: white;
+            max-width: 600px;
+            width: 100%;
+            min-height: 100vh;
+            margin: 0 auto;
+            box-shadow: 10px 10px 24px 0px rgb(0 0 0 / 50%);
+        }
+        
+        h1 {
+            font-size: 43px;
+            padding: 27px 0;
+        }
+        
+        input {
+            border: none;
+            border-bottom: 3px solid black;
+            width: 70%;
+            outline: none;
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+        
+        i {
+            color: rgb(255, 165, 0);
+            font-size: 32px;
+        }
+        
+        li {
+            list-style-type: none;
+            text-align: start;
+            margin: 10px 67px;
+            font-size: 26px;
+            font-weight: bold;
+            position: relative;
+        }
+        
+        li::before {
+            content: " ";
+            border-bottom: 3px solid black;
+            width: 12px;
+            left: -30px;
+            top: 14px;
+            position: absolute;
+        }
+    </style>
+
+</head>
+
+<body onload="printData()">
+    <div class="container">
+        <h1>Grocery List</h1>
+        <i class="fas fa-pencil-alt"></i> <input type="text" name="" id=""> <i class="fas fa-trash"></i>
+        <ul></ul>
+    </div>
+
+    <script src="homework4_7.js"></script>
+</body>
+
+</html>
